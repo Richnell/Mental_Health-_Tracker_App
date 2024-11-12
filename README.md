@@ -20,7 +20,7 @@ Mood Report Generation: The app generates a summary report of mood frequencies f
 
 ## 🛠 Structure
 
- ## 📌 Classes
+📌 Classes
 
 1. MentalHealthTracker: The main class that initializes the application, handles the main menu, user registration, login, and navigation to the user menu.
 
@@ -32,7 +32,7 @@ Mood Report Generation: The app generates a summary report of mood frequencies f
 
 
 
-## 📂 Files
+📂 Files
 
 users.txt: Stores registered users' usernames and hashed passwords.
 
@@ -41,14 +41,14 @@ moods.txt: Records each user's mood entries with the date and time.
 
 ## 🚀 Getting Started
 
-## ✨️ Prerequisites
+✨️ Prerequisites
 
 Java Development Kit (JDK) installed (version 8 or above)
 
 Any IDE (e.g., IntelliJ, Eclipse) or terminal to run the Java code
 
 
-## 📲 Installation
+📲 Installation
 
 1. Clone or download the repository.
 
