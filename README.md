@@ -86,7 +86,9 @@ Registration successful! You can now log in.
 Select an option: 1
 
 How are you feeling today? (Happy, Sad, Stressed, etc.): Happy
+
 Your mood has been logged.
+
 Here are some tips for when you're feeling Happy:
 - Keep doing what makes you feel happy!
 - Share your happiness with someone else.
