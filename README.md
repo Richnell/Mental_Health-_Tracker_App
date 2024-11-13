@@ -1,98 +1,73 @@
-
 # 🧠 MENTAL HEALTH TRACKER 
 
 ## 📖 Overview
 
-The Mental Health Tracker is a Java-based console application that helps users monitor their mental well-being by logging their moods, viewing their mood history, and generating reports. This tool is designed with simplicity in mind, allowing users to register, log in, and access various features for mood tracking and mental health tips. It stores user data and mood logs in local files.
+The Advanced Mental Health Tracker is a Java-based console application designed to help users log and monitor their mental health by tracking moods, viewing mood history, and generating mood reports. The application also offers mental health tips based on the user’s mood.
 
 ## 🌟 Features
 
-User Registration: New users can register with a unique username and password.
+1. User Registration and Login:
+Users can register and log in securely with a username and password.
+User data is stored persistently in a file (users.txt).
 
-User Login: Registered users can log in to track their moods.
+2. Mood Logging:
+Users can log their mood by selecting from predefined options (e.g., Happy, Sad, Stressed, etc.).
+Each mood entry is timestamped and saved to a file (moods.txt).
 
-Mood Logging: Users can log their current mood (e.g., Happy, Sad, Stressed) and receive mental health tips.
+3. Mood History:
+Users can view their complete mood history, showing all previously logged moods.
 
-Mood History: Users can view their past mood entries, categorized by date.
+4. Mood Report:
+The app generates a report showing the frequency and percentage of each mood type logged by the user.
 
-Mood Report Generation: The app generates a summary report of mood frequencies for each user.
+5. Mood Tips:
+The app provides personalized self-care tips based on the user’s logged mood.
 
+## 📌 Getting Started
 
-## 🛠 Structure
+Prerequisites
 
-📌 Classes
+Java Development Kit (JDK): Ensure Java is installed and set up on your machine.
 
-1. MentalHealthTracker: The main class that initializes the application, handles the main menu, user registration, login, and navigation to the user menu.
-
-
-2. User: Manages user data, including registration, login, and file handling for storing user information.
-
-
-3. MoodTracker: Handles mood-related features such as logging moods, displaying mood history, generating reports, and providing mood-based tips.
-
-
-
-📂 Files
-
-users.txt: Stores registered users' usernames and hashed passwords.
-
-moods.txt: Records each user's mood entries with the date and time.
-
-
-## 🚀 Getting Started
-
-✨️ Prerequisites
-
-Java Development Kit (JDK) installed (version 8 or above)
-
-Any IDE (e.g., IntelliJ, Eclipse) or terminal to run the Java code
-
+IDE (Optional): While you can run this app in any Java environment, using an IDE like IntelliJ IDEA, Eclipse, or Visual Studio Code is recommended
 
 📲 Installation
 
-1. Clone or download the repository.
+1. Clone or Download the repository files.
 
+2. Open the project in your preferred IDE.
 
-2. Open the project in your preferred IDE or navigate to the project directory in the terminal.
+3. Run the MentalHealthTracker main class to start the application.
 
+## 💻 Usage
 
+1. Register a new user by selecting "1" from the main menu.
 
-## ⌨️ Running the Application
+2. Login using the registered username and password by selecting "2".
 
-1. Compile the program:
+3. Access the User Menu:
+**Log Mood**: Select "1" and follow the prompts to log your current mood.
+**View Mood History**: Select "2" to see all previously logged moods.
+**Generate Mood Report**: Select "3" to view a summary of mood patterns.
+**Logout**: Select "4" to log out of the current session.
 
-javac MentalHealthTracker.java
+4. Exit the application by selecting "3" from the main menu.
 
+## 📁 Files Used
 
-2. Run the program:
+users.txt: Stores user credentials in the format username:password.
 
-java MentalHealthTracker
+moods.txt: Stores mood entries with timestamps in the format date - username: mood.
 
+## ⌨️ Code Overview
 
-3. Follow the on-screen instructions to register, log in, and start tracking moods.
+MentalHealthTracker.java: Main entry point. Manages registration, login, and navigation through the user menu.
 
+MoodTracker.java: Handles mood logging, viewing history, and generating mood reports.
 
+User.java: Manages user data, including registration, login, and data persistence in users.txt.
 
-## 💻 Using the Application
-
-1. Register: Select option 1 from the main menu to create an account.
-
-
-2. Login: After registration, log in with your username and password.
-
-
-3. User Menu:
-
-Log Mood: Select option 1 to record your current mood. You will receive helpful tips based on your mood.
-
-View Mood History: Select option 2 to see all past mood entries.
-
-Generate Mood Report: Select option 3 to get a summary of your mood log frequencies.
-
-
-
-
-## 📄 Example Interaction
+## ⏳ Example Flow
 
 Welcome to the Advanced Mental Health Tracker App
 1. Register
@@ -100,8 +75,8 @@ Welcome to the Advanced Mental Health Tracker App
 3. Exit
 Select an option: 1
 
-Enter username: user123
-Enter password: password123
+Enter username: user1
+Enter password: pass1
 Registration successful! You can now log in.
 
 1. Log Mood
@@ -116,13 +91,16 @@ Here are some tips for when you're feeling Happy:
 - Keep doing what makes you feel happy!
 - Share your happiness with someone else.
 
-## 🗂 File Structure
+## 🗒 Requirements and Notes
 
-MentalHealthTracker/
-├── MentalHealthTracker.java   # Main application class
-├── User.java                  # User management class
-├── MoodTracker.java           # Mood tracking and tips class
-├── users.txt                  # File storing user information
-├── moods.txt                  # File storing mood logs
-└── README.md                  # Documentation file
+Java version 8 or higher.
 
+Ensure users.txt and moods.txt are in the same directory as the application, or update paths if stored elsewhere.
+
+When registering, usernames must be unique.
+
+## 🗂 Troubleshooting
+
+File Not Found Errors: If users.txt or moods.txt files are missing, the application will create them.
+
+Login Issues: Make sure you register first, as only registered users can log in.
