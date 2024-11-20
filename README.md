@@ -1,63 +1,57 @@
 # 🧠 MENTAL HEALTH TRACKER 
 
-## 📖 Overview
+## I. 📖 Project Overview
 
-The Advanced Mental Health Tracker is a Java-based console application designed to help users log and monitor their mental health by tracking moods, viewing mood history, and generating mood reports. The application also offers mental health tips based on the user’s mood.
+The Mental Health Tracker App is a Java-based application designed to help individuals track and monitor their mental health. Users can log their mood, view their mood history, and generate mood reports. The app provides useful tips for different moods to encourage positive mental well-being. It includes user authentication (registration and login) and stores user data in text files.
 
-## 🌟 Features
+## II. 📌 Explanation of How OOP Principles Were Applied
 
-1. User Registration and Login:
-Users can register and log in securely with a username and password.
-User data is stored persistently in a file (users.txt).
+This project makes use of Object-Oriented Programming (OOP) principles, such as:
 
-2. Mood Logging:
-Users can log their mood by selecting from predefined options (e.g., Happy, Sad, Stressed, etc.).
-Each mood entry is timestamped and saved to a file (moods.txt).
+Encapsulation: The app encapsulates mood-related logic within the MoodTracker and user-related logic within the User class. Data like users and moods are hidden behind methods and are not directly accessible from outside the class.
 
-3. Mood History:
-Users can view their complete mood history, showing all previously logged moods.
+Inheritance: The MoodTracker class extends the abstract Tracker class, inheriting common functionality such as saving entries to a file and loading user data. This demonstrates code reuse and promotes a cleaner design.
 
-4. Mood Report:
-The app generates a report showing the frequency and percentage of each mood type logged by the user.
+Abstraction: The Tracker class provides an abstract representation for mood tracking, which can be extended for other types of tracking (e.g., physical health, exercise). Users interact with high-level methods without worrying about the underlying implementation.
 
-5. Mood Tips:
-The app provides personalized self-care tips based on the user’s logged mood.
+Polymorphism: Methods like logEntry, viewHistory, and generateReport are abstract in the Tracker class and are implemented differently in the MoodTracker subclass, showing how the app can be expanded with different types of trackers in the future.
 
-## 📌 Getting Started
 
-Prerequisites
+## III. 📁 Details of the Chosen SDG and Its Integration into the Project
 
-Java Development Kit (JDK): Ensure Java is installed and set up on your machine.
+This project contributes to SDG 3: Good Health and Well-Being, specifically by promoting mental health and well-being. By providing users with tools to track their moods and receive tailored tips, the app helps users become more aware of their emotional states and seek support when needed. Tracking mood patterns also encourages early detection of mental health issues, supporting better decision-making for self-care and well-being.
 
-IDE (Optional): While you can run this app in any Java environment, using an IDE like IntelliJ IDEA, Eclipse, or Visual Studio Code is recommended
+## IV. 💻 Instructions for Running the Program
 
-📲 Installation
+**1. Clone the repository:**
+You can clone this repository to your local machine using:
 
-1. Clone or Download the repository files.
+git clone https://github.com/yourusername/mental-health-tracker.git
 
-2. Open the project in your preferred IDE.
 
-3. Run the MentalHealthTracker main class to start the application.
+**2. Compile the code:**
+Ensure you have Java installed on your machine. Compile the Java files using the following command:
 
-## 💻 Usage
+javac *.java
 
-1. Register a new user by selecting "1" from the main menu.
 
-2. Login using the registered username and password by selecting "2".
+**3. Run the application:**
+After compilation, run the MentalHealthTracker class to start the app:
 
-3. Access the User Menu:
-**Log Mood**: Select "1" and follow the prompts to log your current mood.
-**View Mood History**: Select "2" to see all previously logged moods.
-**Generate Mood Report**: Select "3" to view a summary of mood patterns.
-**Logout**: Select "4" to log out of the current session.
+java MentalHealthTracker
 
-4. Exit the application by selecting "3" from the main menu.
 
-## 📁 Files Used
+**4. Interacting with the App:**
 
-users.txt: Stores user credentials in the format username:password.
+**Register:** Create a new account by providing a username and password.
 
-moods.txt: Stores mood entries with timestamps in the format date - username: mood.
+**Login:** After registration, log in with your username and password.
+
+**Log Mood:** Record your mood for the day, and receive helpful tips.
+
+**View Mood History:** View your previously logged moods.
+
+**Generate Mood Report:** View a summary of your moods over time.
 
 ## ⌨️ Code Overview
 
@@ -90,19 +84,5 @@ How are you feeling today? (Happy, Sad, Stressed, etc.): Happy
 Your mood has been logged.
 
 Here are some tips for when you're feeling Happy:
-- Keep doing what makes you feel happy!
 - Share your happiness with someone else.
 
-## 🗒 Requirements and Notes
-
-Java version 8 or higher.
-
-Ensure users.txt and moods.txt are in the same directory as the application, or update paths if stored elsewhere.
-
-When registering, usernames must be unique.
-
-## 🗂 Troubleshooting
-
-File Not Found Errors: If users.txt or moods.txt files are missing, the application will create them.
-
-Login Issues: Make sure you register first, as only registered users can log in.
