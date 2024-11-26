@@ -1,6 +1,6 @@
 # Mental Health Tracker
 
-
+<img src="https://github.com/Richnell/Mental_Health-_Tracker_App/blob/main/Mental%20Health%20Tracker.png?raw=true" width="200"/>
 
 A console-based application that helps users monitor their mental health by logging moods, viewing history, and generating detailed mood reports.
 
