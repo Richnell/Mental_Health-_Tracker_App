@@ -4,13 +4,14 @@
 
 A console-based application that helps users monitor their mental health by logging moods, viewing history, and generating detailed mood reports.
 
-## Table of Contents
+## 📖 Table of Contents
 1. [Project Overview](#-project-overview)
 2. [Objectives](#-objectives)
 3. [Features](#-features)
-4. [Mental Health Benefits](#-mental-health-benefits)
-5. [SDGs Connection](#-sdgs-connection)
-6. [Contributors](#-contributors)
+4. [How OOP Principles Were Applied](#-how-oop-principles-were-applied)
+5. [Mental Health Benefits](#-mental-health-benefits)
+6. [SDGs Connection](#-sdgs-connection) 
+7. [Contributors](#-contributors)
 
 ## 🌍 Project Overview
 The Mental Health Tracker is a command-line application designed to empower users in maintaining their mental well-being. By logging daily moods, reviewing mood histories, and generating reports, the application helps users identify patterns and gain insights into their emotional health.
@@ -25,7 +26,20 @@ The Mental Health Tracker is a command-line application designed to empower user
 - Mood Logging with predefined categories like Happy, Sad, Stressed, etc. 📝
 - Personalized mood tips based on the logged mood. 💡
 - Mood History View to track daily entries. 📅
-- Generate detailed mood reports with percentage breakdowns of logged emotions. 
+- Generate detailed mood reports with percentage breakdowns of logged emotions.
+
+## 💻 How OOP Principles Were Applied
+
+This project makes use of Object-Oriented Programming (OOP) principles, such as:
+
+**Encapsulation:** The app encapsulates mood-related logic within the MoodTracker and user-related logic within the User class. Data like users and moods are hidden behind methods and are not directly accessible from outside the class.
+
+**Inheritance:** The MoodTracker class extends the abstract Tracker class, inheriting common functionality such as saving entries to a file and loading user data. This demonstrates code reuse and promotes a cleaner design.
+
+**Abstraction:** The Tracker class provides an abstract representation for mood tracking, which can be extended for other types of tracking (e.g., physical health, exercise). Users interact with high-level methods without worrying about the underlying implementation.
+
+**Polymorphism:** Methods like logEntry, viewHistory, and generateReport are abstract in the Tracker class and are implemented differently in the MoodTracker subclass, showing how the app can be expanded with different types of trackers in the future.
+
 
 ## 🧠 Mental Health Benefits
 - **Increased Self-Awareness:** By reviewing mood history, users can better understand the causes and effects of their emotions.
@@ -42,8 +56,37 @@ This project supports several **United Nations Sustainable Development Goals (SD
   
 - **SDG 10: Reduced Inequalities**  
   Provides an inclusive and accessible mental health platform for individuals from diverse backgrounds.
+
+## 🗂 Instructions for Running the Program
+
+1. Clone the repository:
+You can clone this repository to your local machine using:
+
+- git clone https://github.com/yourusername/mental-health-tracker.git
+
+3. Compile the code:
+Ensure you have Java installed on your machine. Compile the Java files using the following command:
+
+- javac *.java 
+
+5. Run the application:
+After compilation, run the MentalHealthTracker class to start the app:
+
+- java MentalHealthTracker
+
+6. Interacting with the App:
+   
+- **Register:** Create a new account by providing a username and password.
+
+- **Login:** After registration, log in with your username and password.
+
+- **Log Mood:** Record your mood for the day, and receive helpful tips.
+
+- **View Mood History:** View your previously logged moods.
+
+- **Generate Mood Report:** View a summary of your moods over time.
   
-## 👷‍ Contributors
+7. ## 👷‍ Contributors
 | Name                    | Role       | Email                          |
 |-------------------------|------------|--------------------------------|
 | John Richnell Catibog   | Developer  | 23-04985@g.batstate-u.edu.ph   |
